@@ -1,0 +1,136 @@
+/* Colors and fonts */
+body {
+	background-color: #EEEEFF; /* Background color */
+	color: #394053; /* Text color */
+	font-family: Roboto, sans-serief;
+	font-size: 16px; /* Standard font size */
+	line-height: 1.6;
+	font-weight: 100;
+}
+h1, h2, h3, h4 {
+	font-family: Roboto, sans-serief;
+	color: #012A36;	
+	line-height: 1.9;
+	letter-spacing: 1.2px;
+}
+h1 {
+	font-size: 32px;
+	font-weight: 1000;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 1000;
+}
+h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 400;
+	color: #72b5b7;
+}
+h4 {
+	font-weight: 400;
+}
+a { /* Describes link properties */
+	color: #394053;
+	text-decoration: none; /* Deletes underline of link */
+	font-weight: bold;
+	transition: color 0.3s ease;
+}
+a:hover { /* Pseudo-class, element in a specific state, in this case when hovered */
+	text-decoration: none; 
+}
+
+/* Custom designs with classes */
+.container {
+	/* Centers the page content to prevent the content from taking 100% of the window */
+	width: 700px; /* Fix the width */
+	margin: 40px auto; /* Set automatic margins for left and right */
+}
+.card-white {
+	/* Groups information into white box with shadow */
+	background-color: white;
+    padding: 40px; /* Standard 40px internal space everywhere */
+	margin: 20px 0px; /* 20px of top/bottom margin and 0px of left/right margin */
+    border-radius: 4px; /* Small radius */
+    box-shadow: 0 10px 30px rgba(0,0,0,.1); /* Light shadow */
+    text-align: center;
+}
+.card-white:hover {
+	border: 1px solid #72b5b7;
+}
+.img-circle {
+	/* Creates round images */
+	width: 100px;
+ 	height: 100px;
+ 	border-radius: 50%;
+}
+.img-size {
+	width: 200px;
+	height: 25%;
+}
+.shadowed {
+	box-shadow: 5px 5px 3px #394053;
+}
+.btn-purple {
+	background-color: #633a82;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+}
+.btn-purple:hover {
+	background-color: white;
+	color: #633a82;
+	border: 1px solid #633a82;
+}
+.list-inline {
+	list-style: none; /* Deletes bullet points */
+	padding-left: 0px; /* Deletes remaining left padding */
+}
+.list-inline li {
+	display: inline; /* Changes list item behavior to inline/horizontal layout */
+	padding: 0px 20px; /* Adds left/right padding between list items */
+}
+.list-inline i {
+	font-size: 50px;
+	color: #633a82;
+}
+.list-inline i:hover {
+	color: #72b5b7;
+}
+.text-green {
+	color: #72b5b7;
+}
+.text-bold {
+	font-weight: bold;
+}
+.text-italic {
+	font-style: italic;
+}
+.img-margin img {
+	margin-bottom: 40px;
+}
+
+/* Design adjustments using ids */
+#introduction p {
+	margin-bottom: 40px;
+}
+
+/* Adjustements regarding screen width*/
+@media (max-width: 960px) {
+  /* For a screen <960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen <720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen <540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
